@@ -10,6 +10,8 @@ Writeup of work from https://maxwellrules.com/programming/rusty-python.html .
     - If you have problems with `pyenv install 3.x.x` on MacOS, a solution I found was found here: https://github.com/asdf-community/asdf-python/issues/124 i.e `brew uninstall binutils`.
     -  On my platform `3.8.5` could not build the wheel: `ERROR: Rumpy-0.1.0-cp38-cp38-macosx_10_7_x86_64.whl is not a supported wheel on this platform.`. Therefore re-ran with `pyenv install 3.10.9`. 
 
+Ensure your $PATH is correct, `pyenv` can mess things up. In the future this may be rewritten without pyenv. For example, ensure you use the `maturin` installed in your venv and not the global version. 
+
 ## Running
 
 - Edit `Rumpy/Cargo.toml` with the provided code.
@@ -17,3 +19,10 @@ Writeup of work from https://maxwellrules.com/programming/rusty-python.html .
 - Run `maturin develop --release` in the `Rumpy/` directory.
 
 ![ipython](images/ipython.png)
+
+
+### Benchmark
+
+```python
+python benchmark.py 2000
+```
