@@ -15,3 +15,5 @@ Writeup of work from https://maxwellrules.com/programming/rusty-python.html .
 - Edit `Rumpy/Cargo.toml` with the provided code.
 - Edit `Rumpy/src/lib.rs` with the provided code.
 - Run `maturin develop --release` in the `Rumpy/` directory.
+
+![ipython](images/ipython.png)
